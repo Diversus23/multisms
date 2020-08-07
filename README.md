@@ -7,4 +7,5 @@
 ![Логотип](https://raw.githubusercontent.com/Diversus23/multisms/master/screen/multismslogo.png "Мульти-рассылка СМС")
 
 Автор: Барилко Виталий Викторович
+
 Сайт публикации: https://softonit.ru/catalog/products/multisms/#detail

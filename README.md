@@ -40,6 +40,8 @@
 
 Дальше можно заполнить СМС, отправить их и проверить их статусы доставки.
 
+![Заполнение и отправка](https://raw.githubusercontent.com/Diversus23/multisms/master/screen/u6.png "Заполнение и отправка")
+
 Автор: Барилко Виталий Викторович
 
 Сайт публикации: https://softonit.ru/catalog/products/multisms/#detail

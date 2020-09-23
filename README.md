@@ -9,6 +9,13 @@
 
 ![Логотип](https://raw.githubusercontent.com/Diversus23/multisms/master/screen/multismslogo.png "Мульти-рассылка СМС")
 
+## С какими сервисами работает обработка
+* [sms.ru](https://sys1c.sms.ru)
+* [smsc.ru](http://www.smsc.ru/reg/?ppsoftonit)
+* [p1sms.ru](http://p1sms.ru/)
+* [smsgorod.ru](http://smsgorod.ru/)
+* [terasms.ru](https://terasms.ru/)
+
 ## Возможности обработки
 * Отправка SMS для конфигураций как на обычных формах, так и управляемых;
 * Поддержка почти всех типовых конфигураций 1С (УТ 11, УТ 10.3, БП 3.0, ЗУП 3.0, Розница 2.0 и 2.1 и созданные на их базе, УНФ 1.5).

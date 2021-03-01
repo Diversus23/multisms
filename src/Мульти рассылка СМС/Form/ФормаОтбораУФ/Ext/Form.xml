@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаполнить" id="17">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ДобавитьПоОтбору</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьРасширеннаяПодсказка" id="23"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="24"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="СправочникОтбора" id="14">
+			<DataPath>СправочникОтбора</DataPath>
+			<DropListButton>true</DropListButton>
+			<ContextMenu name="СправочникОтбораКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="СправочникОтбораРасширеннаяПодсказка" id="25"/>
+			<Events>
+				<Event name="OnChange">СправочникОтбораПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ОтборНастройкиОтбор" id="1">
+			<Representation>Tree</Representation>
+			<Autofill>true</Autofill>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Отбор.Settings.Filter</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<ViewMode>All</ViewMode>
+			<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+			<ContextMenu name="ОтборНастройкиОтборКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ОтборНастройкиОтборКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ОтборНастройкиОтборРасширеннаяПодсказка" id="26"/>
+			<SearchStringAddition name="ОтборНастройкиОтборСтрокаПоиска" id="27">
+				<AdditionSource>
+					<Item>ОтборНастройкиОтбор</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтборНастройкиОтборСтрокаПоискаКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="ОтборНастройкиОтборСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОтборНастройкиОтборСостояниеПросмотра" id="30">
+				<AdditionSource>
+					<Item>ОтборНастройкиОтбор</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтборНастройкиОтборСостояниеПросмотраКонтекстноеМеню" id="31"/>
+				<ExtendedTooltip name="ОтборНастройкиОтборСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОтборНастройкиОтборУправлениеПоиском" id="33">
+				<AdditionSource>
+					<Item>ОтборНастройкиОтбор</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОтборНастройкиОтборУправлениеПоискомКонтекстноеМеню" id="34"/>
+				<ExtendedTooltip name="ОтборНастройкиОтборУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+			</SearchControlAddition>
+		</Table>
+		<LabelDecoration name="ДекорацияНадпись" id="21">
+			<TextColor>#3366FF</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нажмите "Добавить новый элемент" в открывшемся окне щелкните на "плюсик" возле "Ссылка" и в развернутом списке выберите реквизит, по которому хотите сделать отбор (пол, группа, дата рождения и т.д.).</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНадписьКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ДекорацияНадписьРасширеннаяПодсказка" id="36"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.МультиРассылкаСМС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Отбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СправочникОтбора" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Справочник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьПоОтбору" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить по отбору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить по отбору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьПоОтбору</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

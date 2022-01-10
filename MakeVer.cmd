@@ -4,7 +4,7 @@ echo        Release batch
 echo ---------------------------
 @echo On
 
-set version=1.0.0.38
+set version=1.0.0.39
 
 @echo off
 

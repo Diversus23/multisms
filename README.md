@@ -12,9 +12,9 @@
 ## С какими сервисами работает обработка
 * [sms.ru](https://sys1c.sms.ru)
 * [smsc.ru](http://www.smsc.ru/reg/?ppsoftonit)
-* [p1sms.ru](http://p1sms.ru/)
 * [smsgorod.ru](http://smsgorod.ru/)
 * [terasms.ru](https://terasms.ru/)
+* [sms-prosto.ru](https://sms-prosto.ru/)
 
 ## Возможности обработки
 * Отправка SMS для конфигураций как на обычных формах, так и управляемых;

@@ -4,11 +4,11 @@ echo        Release batch
 echo ---------------------------
 @echo On
 
-set version=1.0.0.40
+set version=1.0.0.51
 
 @echo off
 
-set source=".\γ«μβ¨ ΰ ααλ«ª  ‘‘.epf" ".\doc\€ “‘’€‚’ ’€‚“ ‘‘ ‹…’€ ‚ “’ 11,  3.0, “”, ‡“.3.0, ®§­¨ζ  2.1.pdf"
+set source=".\Ε’Γ£Β«Γ¬ΓΆΒ¨ Γ Β Γ΅Γ΅Γ«Β«ΒªΒ  β€Ε’β€.epf" ".\doc\Ε β‚¬Ε  β€β€β€™β‚¬ΒΕ½β€Λ†β€™Ε“ Ε½β€™ΒΒβ‚¬β€Ε β€ β€Ε’β€ Ε β€ΉΛ†β€¦Ββ€™β‚¬Ε’ β€ β€β€™ 11, ΒΒ 3.0, β€Ββ€, β€΅β€Β.3.0, ΒΒ®Β§Β­Β¨Γ¦Β  2.1.pdf"
 set destination=".\versions"
 
 "C:\Program Files\7-Zip\7z.exe" a -tzip -ssw -mx9 -r0 %destination%\multisms1c_%version%.zip %source%

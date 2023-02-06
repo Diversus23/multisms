@@ -12,6 +12,7 @@
 ## С какими сервисами работает обработка
 * [sms.ru](https://sys1c.sms.ru)
 * [smsc.ru](http://www.smsc.ru/reg/?ppsoftonit)
+* [sms4b.ru](http://sms4b.ru/)
 * [smsgorod.ru](http://smsgorod.ru/)
 * [terasms.ru](https://terasms.ru/)
 * [sms-prosto.ru](https://sms-prosto.ru/)

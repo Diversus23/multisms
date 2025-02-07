@@ -21,7 +21,7 @@
 
 ## Изменения
 
-* Добавлен  СМС сервис от ProstoSMS https://sms-prosto.ru.
+* Добавлен СМС сервис от ProstoSMS sms-prosto.ru.
 
 # [1.0.0.50] - 2022-03-18
 
